@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <h1 style="text-align: center; color: goldenrod; font-family: Arial;"> {{ title }} </h1>
+</head>
+<body>
+    <body style="background: linear-gradient(90deg, #60EFFF 10%, #0061FF 90%);"></body>
+    
+    {% if website.debug %}
+        <article style="background: red; margin-top: 150px; padding: 2px;">
+            <h3 style="text-align: center; color: white"> 
+                You are in debug. The web address is : {{ website.url }} 
+            </h3>
+            <h3 style="text-align: center; color: white"> 
+                Response time is : {{ website.response_time }}   Quite Fast! 
+            </h3>
+        </article>  
+    {% endif %}
+        
+</body>
+</html>
